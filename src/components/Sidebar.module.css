@@ -1,0 +1,82 @@
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+  height: calc(100vh - 60px);
+  position: sticky;
+  top: 60px;
+  transition: transform 0.3s ease, margin-left 0.3s ease, opacity 0.3s ease;
+  overflow-y: auto;
+  opacity: 1;
+}
+
+.closed {
+  transform: translateX(-100%);
+  margin-left: -260px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebarSection {
+  margin-bottom: 1.5rem;
+}
+
+.sidebarSectionTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #878a8c;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: inherit;
+}
+
+.sidebarItem:hover {
+  background-color: rgba(0, 121, 211, 0.1);
+}
+
+.sidebarIcon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.sidebarLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.sidebarDivider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+/* Dark Mode Support */
+:global(.dark) .sidebar {
+  background-color: #1a1a1b;
+  border-right-color: #343536;
+  color: #d7dadc;
+}
+
+:global(.dark) .sidebarDivider {
+  border-top-color: #343536;
+}
+
+:global(.dark) .sidebarItem:hover {
+  background-color: rgba(215, 218, 220, 0.1);
+}

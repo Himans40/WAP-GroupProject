@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import Main from "./components/Main"
 import "./App.css";
 
 export default function App() {
@@ -29,10 +30,7 @@ export default function App() {
       />
       <div className="main-layout">
         <Sidebar isOpen={isSidebarOpen} />
-        <main className="content-area">
-          <h1>Welcome to RedditX</h1>
-          <p>Current search: {searchQuery || "None"}</p>
-        </main>
+        <Main/>
       </div>
     </div>
   );

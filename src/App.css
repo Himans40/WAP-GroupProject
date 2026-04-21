@@ -4,19 +4,19 @@
   min-height: calc(100vh - 60px);
 }
 
-.content-area {
+/* .content-area {
   flex-grow: 1;
   padding: 2rem;
   background-color: #dae0e6;
   min-height: 100vh;
   transition: margin-left 0.3s ease;
-}
+} */
 
 /* Dark Mode Global Overlays */
-:global(.dark) .content-area {
+/* :global(.dark) .content-area {
   background-color: #030303;
   color: #d7dadc;
-}
+} */
 
 /* App Container (Global) */
 .app-container {

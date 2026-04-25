@@ -1,7 +1,7 @@
 .container {
-    background-color: white;
+    background-color: var(--bg-card);
     border-radius: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     padding: 16px;
     width: 312px;
     /* Standard sidebar width */
@@ -10,7 +10,7 @@
 .title {
     font-size: 14px;
     text-transform: uppercase;
-    color: #576477;
+    color: var(--text-secondary);
     margin-bottom: 12px;
 }
 
@@ -37,11 +37,12 @@
 .name {
     font-weight: 600;
     font-size: 14px;
+    color: var(--text-main);
 }
 
 .members {
     font-size: 12px;
-    color: #576477;
+    color: var(--text-secondary);
 }
 
 .joinBtn {
@@ -52,4 +53,16 @@
     border-radius: 999px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.showMore {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #0045AC;
+    font-weight: 600;
+    padding-top: 16px;
+    cursor: pointer;
+    border-top: 1px solid var(--border-color);
+    margin-top: 8px;
 }

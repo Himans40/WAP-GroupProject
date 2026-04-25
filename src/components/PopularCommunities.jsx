@@ -4,7 +4,7 @@ import styles from "./PopularCommunities.module.css";
 export default function PopularCommunities() {
     const communities = [
         {
-            name: "r/reactjs",
+            name: "r/React_js",
             members: "12,312,981 members",
             image: "https://picsum.photos/32?random=1"
         },
@@ -24,7 +24,7 @@ export default function PopularCommunities() {
             image: "https://picsum.photos/id/12/32"
         },
         {
-            name: "ArtificialIntelligence",
+            name: "Artificial-Intelligence",
             members: "6,404,505 members",
             image: "https://picsum.photos/id/17/32"
         }
